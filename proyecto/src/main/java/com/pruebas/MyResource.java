@@ -20,6 +20,6 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Bienvenido al curso de...";
+        return "Bienvenido al curso de bots";
     }
 }
