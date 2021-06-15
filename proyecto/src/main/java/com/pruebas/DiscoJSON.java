@@ -19,5 +19,13 @@ public class DiscoJSON {
 		disc.setGrupo("The Eagles");
 		return disc;
 	}
+	
+	@POST
+	@Path("/crear")
+	@Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_HTML})
+	public Response crearDisco(Disco disc) {
+		String salida = "Disco guardado: " + disc;
+		return Response.status(200).entity(salida).build();
+	}
 
 }
